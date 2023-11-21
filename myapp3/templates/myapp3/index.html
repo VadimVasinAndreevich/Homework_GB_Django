@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}Мой сайт{% endblock %}
+
+{% block content %}
+    {% for key, value in my_dict.items %}
+        <p>{{ key }}: {{ value }}</p>
+    {% endfor %}
+{% endblock %}
